@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-demo
+    release: {{ .Release.Name }}
+    chartVersion: {{ .Chart.Version }}
+    chartApiVersion: {{ .Chart.APIVersion }}
+    chartAppVersion: {{ .Chart.AppVersion }}
+    chartName: {{ .Chart.Name }}
+    valueTest: {{ .Values.myConfig.test }}
+  name: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.myConfig.replicas }}
+  selector:
+    matchLabels:
+      app: nginx-demo
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: nginx-demo
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
