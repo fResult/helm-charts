@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  my-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-09-23T13:51:11.083678+07:00"
+    description: A Helm chart for Kubernetes [This is my first Helm chart]
+    digest: faae68b6716ed31fa0afc94bf0878e5d1eb5bb222f543d366e436071d6418b15
+    home: https://github.com/fResult
+    maintainers:
+    - email: styxmaz@gmail.com
+      name: fResult
+    - email: email@example.com
+      name: New Maintainer
+    name: my-chart
+    sources:
+    - https://github.com/fResult/helm-charts
+    type: application
+    urls:
+    - https://fresult.github.io/helm-charts/index.yaml/my-chart-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-09-23T13:51:11.083129+07:00"
